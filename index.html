@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Jogo da velha</title>
+		<script
+  			src="https://code.jquery.com/jquery-2.2.4.min.js"
+			integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+			crossorigin="anonymous"></script>
+
+		<script src="game.js"></script>
+	</head>
+	<body>
+		<div id="initial_page" align="center">
+			<table width="600px">
+				<tbody>
+					<tr>
+						<td colspan="3" align="center">JOGO DA VELHA</td>
+					</tr>
+
+					<tr>
+						<td align="center">
+							<img src="img/jogador_1.png">
+							<br />
+							<input id="player1_name_input" type="text" maxlength="10" placeholder="Apelido do jogador 1" style="border: 0px">
+						</td>
+						<td align="center"><img id="btn_init_game" src="img/iniciar.png"></td>
+						<td align="center">
+							<img src="img/jogador_2.png">
+							<br />
+							<input id="player2_name_input" type="text" maxlength="10" placeholder="Apelido do jogador 1" style="border: 0px">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div id="game" style="display: none; margin-top: 50px; text-align: center">
+			<div style="display: inline-block;">
+				<img src="img/jogador_1.png">
+				<br />
+				<span id="player1_name"></span>
+			</div>
+
+			<div style="display: inline-block;">
+				<table>
+					<tr>
+						<td style="border-bottom: solid 1px red; border-right: solid 1px red">
+							<div class="grid" id="A-0" style="width: 100px; height: 100px;"></div>
+						</td>
+						<td style="border-bottom: solid 1px red; border-right: solid 1px red">
+							<div class="grid" id="A-1" style="width: 100px; height: 100px;"></div>
+						</td>
+						<td style="border-bottom: solid 1px red;">
+							<div class="grid" id="A-2" style="width: 100px; height: 100px;"></div>
+						</td>
+					</tr>
+
+					<tr>
+						<td style="border-bottom: solid 1px red; border-right: solid 1px red">
+							<div class="grid" id="B-0" style="width: 100px; height: 100px;"></div>
+						</td>
+						<td style="border-bottom: solid 1px red; border-right: solid 1px red">
+							<div class="grid" id="B-1" style="width: 100px; height: 100px;"></div>
+						</td>
+						<td style="border-bottom: solid 1px red;">
+							<div class="grid" id="B-2" style="width: 100px; height: 100px;"></div>
+						</td>
+					</tr>
+
+					<tr>
+						<td style="border-right: solid 1px red">
+							<div class="grid" id="C-0" style="width: 100px; height: 100px;"></div>
+						</td>
+						<td style="border-right: solid 1px red">
+							<div class="grid" id="C-1" style="width: 100px; height: 100px;"></div>
+						</td>
+						<td>
+							<div class="grid" id="C-2" style="width: 100px; height: 100px;"></div>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<div style="display: inline-block;">
+				<img src="img/jogador_2.png">
+				<br />
+				<span id="player2_name"></span>
+			</div>
+		</div>
+			
+	</body>
+</html>
